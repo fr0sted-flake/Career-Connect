@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463766271773",
+    "project_id": "career-connect-45",
+    "storage_bucket": "career-connect-45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463766271773:android:3dddf28296b11b39db93f4",
+        "android_client_info": {
+          "package_name": "com.example.placement_portal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463766271773-1b5c3c5rha96c9iffqk04lvp1rmg79a6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOIj3kc2PwuMzqI8wLi4tSIsl5ovPLRqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463766271773-1b5c3c5rha96c9iffqk04lvp1rmg79a6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
