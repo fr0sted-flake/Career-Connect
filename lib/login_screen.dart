@@ -26,7 +26,7 @@ class _SignInScreenState extends State<SignInScreen> {
             child: SingleChildScrollView(
                 child: Padding(
                     padding: EdgeInsets.fromLTRB(
-                        20, MediaQuery.of(context).size.height * 0.2, 20, 100),
+                        20, MediaQuery.of(context).size.height * 0.1, 20, MediaQuery.of(context).size.height * 0.1),
                     child: Column(children: <Widget>[
                       logoWidget("assets/images/download.webp"),
                       const SizedBox(
@@ -51,7 +51,12 @@ class _SignInScreenState extends State<SignInScreen> {
                             print("Error ${error.toString()}");
                         });
     }),
-                      signUpOption()
+                      signUpOption(),
+                      const Padding(
+                        padding: EdgeInsets.all(1.0),
+                        child: Text("Or",style: TextStyle(color: Colors.white70),),
+                      ),
+                      signInWithGoogle(context)
                     ])))));
   }
 
@@ -70,11 +75,12 @@ class _SignInScreenState extends State<SignInScreen> {
             " Sign Up",
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
           ),
-        )
+        ),
       ],
     );
-  }
 }
+}
+
 
 TextEditingController _emailTextController = TextEditingController();
 TextEditingController _passwordTextController = TextEditingController();

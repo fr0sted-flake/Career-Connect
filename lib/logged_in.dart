@@ -1,25 +1,18 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import 'Resources/colors.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
+class LoggedIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(colors: [
-          hexStringToColor("9C27B0"),
-          hexStringToColor("009688")
-        ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+              hexStringToColor("9C27B0"),
+              hexStringToColor("009688")
+            ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
         child: Center(
           child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -38,7 +31,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-
-
-

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:placement_portal/google_sign_in.dart';
+import 'package:provider/provider.dart';
 
 Image logoWidget(String imageName) {
   return Image.asset(
@@ -69,3 +72,33 @@ Container signInSignUpButton(
   );
 }
 
+Container signInWithGoogle(BuildContext context) {
+  return Container(
+    width: MediaQuery.of(context).size.width,
+    height: 50,
+    margin: const EdgeInsets.fromLTRB(0, 10, 0, 20),
+    decoration: BoxDecoration(borderRadius: BorderRadius.circular(90)),
+    child: ElevatedButton.icon(
+      onPressed: () {
+        final provider =
+        Provider.of<GoogleSignInProvider>(context, listen: false);
+        provider.googleLogin();
+      },
+      style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.resolveWith((states) {
+            if (states.contains(MaterialState.pressed)) {
+              return Colors.black26;
+            }
+            return Colors.white;
+          }),
+          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)))),
+      icon: const FaIcon(FontAwesomeIcons.google, color: Colors.redAccent),
+      label: const Text(
+        'Sign In With Google',
+        style: TextStyle(
+            color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 16),
+      ),
+    ),
+  );
+}
