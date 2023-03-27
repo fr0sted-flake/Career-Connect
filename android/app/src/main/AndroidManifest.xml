@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.placement_portal">
    <application
-        android:label="placement_portal"
+        android:label="Career Connect"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

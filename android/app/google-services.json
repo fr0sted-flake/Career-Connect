@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "463766271773",
+    "firebase_url": "https://career-connect-45-default-rtdb.firebaseio.com",
     "project_id": "career-connect-45",
     "storage_bucket": "career-connect-45.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "463766271773-32vof8q0qn2ogekohn16pgufluo2aktj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.placement_portal",
+            "certificate_hash": "296a23da93d57bcc6c151467f405f27d160bcf5a"
+          }
+        },
         {
           "client_id": "463766271773-ln5jo2u2vah6ahckfjq0r395ptjrgmm3.apps.googleusercontent.com",
           "client_type": 3
