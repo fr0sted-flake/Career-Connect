@@ -97,7 +97,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         style: TextStyle(color: Colors.white70)),
                     InkWell(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pop(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const SignInScreen()));

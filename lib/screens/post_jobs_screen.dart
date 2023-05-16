@@ -78,7 +78,8 @@ class _PostJobsState extends State<PostJobs> {
                     final String? description = _descriptionController.text;
                     if (jobtitle != null &&
                         ctc != null &&
-                        officelocation != null) {
+                        officelocation != null &&
+                        description != null) {
                       if (action == 'create') {
                         await _jobss.add({
                           "jobtitle": jobtitle,
